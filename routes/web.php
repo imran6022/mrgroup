@@ -26,6 +26,16 @@ Route::get('/rawcotton/edit{id}', 'RawcottonController@rawCottonEdit')->name('ra
 Route::post('/rawcotton/update{id}', 'RawcottonController@rawCottonPurchaseUpdate')->name('rawCottonPurchaseUpdate');
 Route::get('/rawcotton/delete{id}', 'RawcottonController@rawCottonDelete')->name('rawCottonDelete');
 
+//Sales
+
+Route::get('/sale', 'SalesController@salesmamage')->name('salesmamage');
+Route::get('/sale/add', 'SalesController@salesadd')->name('salesadd');
+Route::post('/sale/create', 'SalesController@SalesCreate')->name('SalesCreate');
+Route::get('/sale/edit{id}', 'SalesController@editSales')->name('editSales');
+Route::post('/sale/update{id}', 'SalesController@SalesUpdate')->name('SalesUpdate');
+Route::get('/sale/delete{id}', 'SalesController@deleteSale')->name('deleteSale');
+
+//setting start
 //count
 Route::get('/count', 'settingController@count')->name('count');
 Route::get('/count/add', 'settingController@count_add')->name('count_add');
@@ -46,3 +56,5 @@ Route::post('/party/create', 'settingController@create_party')->name('create_par
 Route::get('/party/edit{id}', 'settingController@edit_party')->name('edit_party');
 Route::post('/party/update{id}', 'settingController@update_party')->name('update_party');
 Route::get('/party/delete{id}', 'settingController@delete_party')->name('delete_party');
+//setting end
+

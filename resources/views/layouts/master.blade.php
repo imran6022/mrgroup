@@ -192,6 +192,12 @@
           }
         });
 
+        $(".deleteSale").click(function(){
+          if (!confirm("Do you want to delete ?")){
+            return false;
+          }
+        });
+
         
 
       });
@@ -213,6 +219,15 @@
           var r= $('#rate').val();
           $('#amount').val(p*r);
         });
+
+
+        $('#count_id').on('change', function(){
+          $('#pound').val(1000);
+          $('#rate').val(66.00);
+          $('#amount').val(1000*66.00);
+        });
+
+
       });
     </script>
     
