@@ -20,6 +20,12 @@
                       <li><a href="{{ route('salesadd') }}">New Sales</a></li>
                     </ul>
                   </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Reports<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="{{ route('party') }}">Sales Reports</a></li>
+                      <li><a href="{{ route('rawcottontype') }}">Raw Coton Reports</a></li>
+                    </ul>
+                  </li>
                   <li><a><i class="fa fa-bar-chart-o"></i> Setting<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="{{ route('party') }}">Party</a></li>
